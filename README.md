@@ -228,13 +228,12 @@ add and/or remove symfony site folders and files with any ftp client program in 
 
 #### Redis
 
-[Redis Cache](https://symfony.com/userguide3/libraries/caching.html#redis-caching), Config options to connect to redis server must be stored in the application/config/redis.php file.
+[Redis Cache](https://symfony.com/doc/current/components/cache/adapters/redis_adapter.html), Config options to connect to redis server must be stored in the application/config/redis.php file.
 
 Available options are:
 
 ```
-$config['socket_type'] = 'tcp'; //`tcp` or `unix`
-$config['socket'] = '/var/run/redis.sock'; // in case of `unix` socket type
+$config['socket'] = '/var/run/redis.sock';
 $config['host'] = 'redis';
 $config['password'] = NULL;
 $config['port'] = 6379;
