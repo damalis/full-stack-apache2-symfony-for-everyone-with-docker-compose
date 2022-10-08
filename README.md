@@ -228,7 +228,7 @@ add and/or remove symfony site folders and files with any ftp client program in 
 
 #### Redis
 
-[Redis Cache](https://symfony.com/doc/current/components/cache/adapters/redis_adapter.html), Config options to connect to redis server must be stored in the application/config/redis.php file.
+[Redis Cache](https://symfony.com/doc/current/components/cache/adapters/redis_adapter.html); This article explains how to configure the Redis adapter when using the Cache as an independent component in any PHP application..
 
 Available options are:
 
