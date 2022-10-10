@@ -226,6 +226,38 @@ docker container restart symfony
 add and/or remove symfony site folders and files with any ftp client program in ```./symfony/webapp``` folder.
 <br />You can also visit `https://example.com` to access website after starting the containers.
 
+#### Want to see it with a 200 response?
+
+Open the file config/routes.yaml in your Symfony project, and uncomment all 3 lines so it looks as follows:
+
+```
+index:
+    path: /
+    controller: App\Controller\DefaultController::index
+```
+
+Then, in the project folder src/Controller, create the file DefaultController.php.  Set the full contents of the file to be:
+
+```
+<?php
+
+namespace App\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+
+class DefaultController extends AbstractController
+{
+    public function index(Request $request): Response
+    {
+        return new Response("<html><body><br/><br/><center><p style=\"font-size:55px\">Hello World</p></center></body></html>");
+    }
+}
+```
+
+Save it, and refresh your project page.
+
 #### Redis
 
 [Redis Cache](https://symfony.com/doc/current/components/cache/adapters/redis_adapter.html); This article explains how to configure the Redis adapter when using the Cache as an independent component in any PHP application..
