@@ -34,8 +34,8 @@ Create rules to open ports to the internet, or to a specific IPv4 address or ran
 
 - [Auto Configuration and Installation](#automatic)
 - [Requirements](#requirements)
-- [Manual](#manual)
-- [Installation](#installation)
+- [Manual Configuration and Installation](#manual)
+- [Portainer Installation](#portainer)
 - [Usage](#usage)
 
 ## Automatic
@@ -124,7 +124,7 @@ The containers are now built and running. You should be able to access the Symfo
 
 For convenience you may add a new entry into your hosts file.
 
-### Installation Portainer
+## Portainer
 
 ```
 docker volume create portainer_data
