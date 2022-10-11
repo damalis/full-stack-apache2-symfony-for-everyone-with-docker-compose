@@ -34,7 +34,7 @@ Create rules to open ports to the internet, or to a specific IPv4 address or ran
 
 - [Auto Configuration and Installation](#automatic)
 - [Requirements](#requirements)
-- [Configuration](#configuration)
+- [Manual](#manual)
 - [Installation](#installation)
 - [Usage](#usage)
 
@@ -67,7 +67,9 @@ Clone this repository or copy the files from this repository into a new folder. 
 
 Make sure to [add your user to the `docker` group](https://docs.docker.com/install/linux/linux-postinstall/#manage-docker-as-a-non-root-user).
 
-## Configuration
+## Manual
+
+### Configuration
 
 download with
 ```
@@ -79,8 +81,6 @@ Open a terminal and `cd` to the folder in which `docker-compose.yml` is saved an
 ```
 cd full-stack-apache2-symfony-for-everyone-with-docker-compose
 ```
-
-### Manual
 
 Copy the example environment into `.env`
 
