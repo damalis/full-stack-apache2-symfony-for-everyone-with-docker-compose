@@ -226,7 +226,7 @@ add and/or remove symfony site folders and files with any ftp client program in 
 
 #### Want to see it with a 200 response?
 
-Open the file config/routes.yaml in your Symfony project, and uncomment all 3 lines so it looks as follows:
+Open the file ```./symfony/webapp/config/routes.yaml``` in your Symfony project, and uncomment all 3 lines so it looks as follows:
 
 ```
 index:
@@ -234,7 +234,7 @@ index:
     controller: App\Controller\DefaultController::index
 ```
 
-Then, in the project folder src/Controller, create the file DefaultController.php.  Set the full contents of the file to be:
+Then, in the project folder ```./symfony/webapp/src/Controller```, create the file DefaultController.php.  Set the full contents of the file to be:
 
 ```
 <?php
