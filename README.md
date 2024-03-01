@@ -68,6 +68,7 @@ Create rules to open ports to the internet, or to a specific IPv4 address or ran
 - [Usage](#usage)
 	- [Website](#website)
 	- [Webserver](#webserver)
+	- [Database](#database)
 	- [Redis](#redis)
 	- [phpMyAdmin](#phpmyadmin)
 	- [backup](#backup)
@@ -330,7 +331,7 @@ change in the ```./symfony/.env``` file
 
 for mariadb: DATABASE_URL="mysql://{DB_USER}:{DB_PASSWORD}@database:3306/{DB_NAME}?serverVersion=10.11.2-MariaDB&charset=utf8mb4"\
 for mysql: DATABASE_URL="mysql://{DB_USER}:{DB_PASSWORD}@database:3306/{DB_NAME}?serverVersion=8.0.32&charset=utf8mb4"\
-[#] DATABASE_URL="postgresql://app:!ChangeMe!@127.0.0.1:5432/app?serverVersion=16&charset=utf8"
+#DATABASE_URL="postgresql://app:!ChangeMe!@127.0.0.1:5432/app?serverVersion=16&charset=utf8"
  
 #### Redis
 
