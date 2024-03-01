@@ -324,6 +324,14 @@ add or remove code in the ```./webserver/extra/httpd-ssl.conf``` file for custom
 
 [https://httpd.apache.org/docs/2.4/](https://httpd.apache.org/docs/2.4/)
 
+#### Database
+
+change in the ```./symfony/.env``` file
+
+DATABASE_URL="mysql://{DB_USER}:{DB_PASSWORD}@database:3306/{DB_NAME}?serverVersion=10.11.2-MariaDB&charset=utf8mb4" for mariadb
+DATABASE_URL="mysql://{DB_USER}:{DB_PASSWORD}@database:3306/{DB_NAME}?serverVersion=8.0.32&charset=utf8mb4" for mysql
+[#] DATABASE_URL="postgresql://app:!ChangeMe!@127.0.0.1:5432/app?serverVersion=16&charset=utf8"
+ 
 #### Redis
 
 [Redis Cache](https://symfony.com/doc/current/components/cache/adapters/redis_adapter.html); This article explains how to configure the Redis adapter when using the Cache as an independent component in any PHP application..
