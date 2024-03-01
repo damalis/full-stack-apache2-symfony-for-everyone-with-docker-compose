@@ -328,8 +328,8 @@ add or remove code in the ```./webserver/extra/httpd-ssl.conf``` file for custom
 
 change in the ```./symfony/.env``` file
 
-DATABASE_URL="mysql://{DB_USER}:{DB_PASSWORD}@database:3306/{DB_NAME}?serverVersion=10.11.2-MariaDB&charset=utf8mb4" for mariadb
-DATABASE_URL="mysql://{DB_USER}:{DB_PASSWORD}@database:3306/{DB_NAME}?serverVersion=8.0.32&charset=utf8mb4" for mysql
+for mariadb: DATABASE_URL="mysql://{DB_USER}:{DB_PASSWORD}@database:3306/{DB_NAME}?serverVersion=10.11.2-MariaDB&charset=utf8mb4"\
+for mysql: DATABASE_URL="mysql://{DB_USER}:{DB_PASSWORD}@database:3306/{DB_NAME}?serverVersion=8.0.32&charset=utf8mb4"\
 [#] DATABASE_URL="postgresql://app:!ChangeMe!@127.0.0.1:5432/app?serverVersion=16&charset=utf8"
  
 #### Redis
