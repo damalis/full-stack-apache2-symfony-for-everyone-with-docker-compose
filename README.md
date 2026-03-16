@@ -367,20 +367,14 @@ change in the ```./symfony/.env``` file
 <tbody>
   <tr>
     <td>MariaDB</td>
-  </tr>
-  <tr>
     <td>DATABASE_URL="mysql://{DB_USER}:{DB_PASSWORD}@database:3306/{DB_NAME}?serverVersion=10.11.2-MariaDB&charset=utf8mb4"</td>
   </tr>
   <tr>
     <td>MySQL</td>
+	<td>DATABASE_URL="mysql://{DB_USER}:{DB_PASSWORD}@database:3306/{DB_NAME}?serverVersion=8.0.32&charset=utf8mb4"</td>
   </tr>
-  <tr>
-    <td>DATABASE_URL="mysql://{DB_USER}:{DB_PASSWORD}@database:3306/{DB_NAME}?serverVersion=8.0.32&charset=utf8mb4"</td>
-  </tr>
-  <tr>
+  <tr>    
     <td>PostgreSQL</td>
-  </tr>
-  <tr>
     <td>#DATABASE_URL="postgresql://app:!ChangeMe!@127.0.0.1:5432/app?serverVersion=16&charset=utf8"</td>
   </tr>
 </tbody>
